@@ -1,0 +1,210 @@
+/*---------------------------------------------- Global Settings & Fonts ---------------------------------------------------*/
+@font-face {
+  font-family: SackersGothicSTDLight;
+  src: url("./assets/fonts/SackersGothicStd-Light.ttf");
+}
+
+@font-face {
+  font-family: segoe;
+  src: url("./assets/fonts/segoe.ttf");
+}
+
+@font-face {
+  font-family: AugustScriptBold;
+  src: url("./assets/fonts/AugustScriptBold.ttf");
+}
+
+@font-face {
+  font-family: rushink;
+  src: url("./assets/fonts/rushink.ttf");
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  background-color: transparent;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-align: center;
+}
+/* test */
+.everythingMinusFooterContainer {
+  max-width: 1200px;
+}
+
+/* ---------------------------------------------------- Pages Under Construction -------------------------------------------------- */
+
+.construction {
+  background-image: url("./assets/images/construction.jpg");
+  margin-top: 100px;
+  padding: 100px;
+  border: 1px solid #1b1b1b;
+}
+
+.construction h3 {
+  font-size: 50px;
+  font-family: "SackersGothicSTDLight";
+  font-weight: bolder;  
+  padding: 100px;
+}
+
+/* ---------------------------------------------------- End Pages Under Construction ----------------------------------------------- */
+/*----------------------------------------------------- End Global Settings & Fonts -------------------------------------------------*/
+
+/* --------------------------------------------------- Nav ------------------------------------------------- */
+nav {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  overflow: hidden;
+}
+
+nav ul li {
+  color: rgba(0, 0, 0, 1);
+  display: inline-block;
+  list-style: none;
+  padding: 5px 35px;
+  font-size: 0.87em;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  border-bottom: 1px solid #1b1b1b;
+  color: #cbcbcb;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
+nav a:visited {
+  color: #1b1b1b;
+  text-decoration: none;
+}
+
+h1 {
+  border-bottom: 8px solid rgba(0, 0, 0, 1);
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-family: "SackersGothicSTDLight", sans-serif;
+  font-size: 2em;
+  color: #1b1b1b;
+}
+
+h2 {
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+  font-family: "SackersGothicSTDLight", sans-serif;
+  font-size: 0.7em;
+  padding: 10px;
+}
+
+
+/* ------------------------------------------------- End Nav -------------------------------------------------- */
+
+
+/* --------------------------------------------------- Footer ------------------------------------------------- */
+
+.footerBackgroundContainer {
+  color: rgba(0, 0, 0, 1);
+  font-family: "SackersGothicSTDLight", sans-serif;
+  font-size: 10px;
+  max-width: 1200px;
+}
+
+.copyrightContainer {
+  background-color: #ffffff;
+}
+
+footer {
+  width: 100%;
+  background-color: #cbcbcb;
+}
+
+.firstLayer {
+  display: flex;
+  padding: 20px;
+}
+
+.firstLayer article {
+  padding: 20px;
+  width: 35%;
+  text-align: center;
+}
+
+.firstLayer img {
+  width: 70%;
+}
+
+.firstLayer article p {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.firstLayer article a {
+  font-size: 35px;
+  text-decoration: none;
+  color: #656565;
+  
+  padding: 5px;
+  transition: all 0.3s ease 0s;
+}
+
+.firstLayer article a:hover {
+  transform: translate(0, -10px);
+}
+
+.firstLayer small {
+  font-family: "Segoe", sans-serif;
+  font-size: 13px;
+  font-weight: lighter;
+  line-height: 2em;
+}
+
+.article1 {
+  border-left: 1px solid #656565;
+}
+
+.article2 {
+  border-left: 1px solid #656565;
+  border-right: 1px solid #656565;
+}
+
+.article3 {
+  border-right: 1px solid #656565;
+}
+
+.me {
+  margin-top: 90px;
+  margin-bottom: -300px;
+  text-decoration: underline;
+  color: #cbcbcb;
+  cursor: pointer;
+  font-size: 0px;
+}
+
+.me:hover {
+  transition: all 1s ease 0s;
+  color: rgba(0, 0, 0, 1);
+  text-underline-offset: 5px;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+/* Copyright */
+.copyright {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #656565;
+  font-family: "Georgia";
+}
+
+.signature {
+  font-family: "AugustScriptBold", sans-serif;
+  color: #656565;
+  font-size: 15px;
+}
+/* ------------------------------------------------- End Footer ----------------------------------------------- */
