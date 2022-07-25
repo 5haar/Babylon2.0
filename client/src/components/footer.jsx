@@ -10,7 +10,7 @@ class Footer extends React.Component {
                 <section className="firstLayer">
                   <article className="article1">
                     <p>BABYLON ACCEPTS</p>
-                    <img src="images/payments/payments.png" alt="acceptedpayments" />
+                    <img src={require('../assets/images/payments/payments.png')} />
                   </article>
                   <article className="article2">
                     <p>

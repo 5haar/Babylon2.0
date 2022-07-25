@@ -25,11 +25,10 @@
   background-color: transparent;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  text-align: center;
 }
 /* test */
 .everythingMinusFooterContainer {
-  max-width: 1200px;
+  max-width: 1300px;
 }
 
 /* ---------------------------------------------------- Pages Under Construction -------------------------------------------------- */
@@ -52,6 +51,11 @@
 /*----------------------------------------------------- End Global Settings & Fonts -------------------------------------------------*/
 
 /* --------------------------------------------------- Nav ------------------------------------------------- */
+.nav_container {
+  max-width: 1300px;
+  text-align: center;
+}
+
 nav {
   text-align: center;
   background-color: #ffffff;
@@ -90,6 +94,16 @@ h1 {
   font-family: "SackersGothicSTDLight", sans-serif;
   font-size: 2em;
   color: #1b1b1b;
+}
+
+h1 a {
+  color: #1b1b1b;
+  text-decoration: none;
+}
+
+h1 a:visited {
+  color: #1b1b1b;
+  text-decoration: none;
 }
 
 h2 {
@@ -208,3 +222,592 @@ footer {
   font-size: 15px;
 }
 /* ------------------------------------------------- End Footer ----------------------------------------------- */
+.intro {
+  margin-top: 2em; 
+  max-width: 1300px;
+  height: 100vh;
+  text-align: center;
+}
+
+.banner {
+  overflow: hidden;
+  object-fit: fill;
+  background-image: url("./assets/images/banner.webp");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100vw;
+  margin: 20px;
+  margin-top: -20px;
+}
+
+.banner h3 {
+  font-size: 6em;
+  font-family: "rushink";
+  color: #ffffff;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  max-height: 100vh;
+  padding: 90px;
+  padding-left: 150px;
+  padding-right: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner h3:hover {
+  opacity: 65%;
+  cursor: pointer;
+}
+
+.newSpringItems h3 {
+  font-weight: lighter;
+  font-size: 1.5em;
+  padding: 10px;
+  border: 1px solid #1b1b1b;
+  margin: 20px;
+  margin-bottom: 0px;
+}
+
+.newSpringItems figure {
+  width: 100%;
+  min-height: 350px;
+  padding-bottom: 20px;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.newSpringItems figcaption {
+  text-align: left;
+  margin: 20px;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 0.87em;
+  border: 1px solid;
+}
+
+.springItemsGallery h3 {
+  font-family: "Georgia";
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+  padding: 20px;
+}
+
+.springItemsGallery {
+  display: inline-flex;
+  font-family: "Georgia";
+}
+
+.springItemsGallery img {
+  max-width: 100%;
+  max-height: 350px;
+  padding: 20px;
+  padding-bottom: 0px;
+  transition: all 0.3s ease 0s;
+}
+/* Scroll Down Animation */
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 1px solid #1b1b1b;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  padding-top: 50px;
+  background-color: #ffffff;
+  transition: all 0.3s ease 0s;
+
+}
+
+.scroll-down:hover {
+  background-color: #cbcbcb;
+}
+
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  border: 1px solid #1b1b1b;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after {
+  top: 30%;
+  animation-delay: 0.3s;
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90%;
+  }
+}
+/* -------------------------------------------------------- End Header ----------------------------------------------------- */
+/* ------------------------------------------------------ Main Container --------------------------------------------------- */
+
+#main {
+  color: #1b1b1b;
+  font-family: "segoe", sans-serif;
+  line-height: 2em;
+}
+
+/* --------------------------------------------------------- Section 1 ----------------------------------------------------- */
+
+#section1 {
+  min-height: 50vh;
+  background-color: transparent;
+  text-align: center;
+  margin: 75px;;
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+
+#section1 figure {
+  width: 100%;
+  height: 250px;
+  line-height: 1.5em;
+}
+
+#section1 figcaption {
+  text-align: left;
+  margin: 20px;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 0.87em;
+  border: 1px solid;
+}
+
+.LA {
+  font-size: 20px;
+  font-family: "Georgia";
+  font-weight: normal;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.gallery1 {
+  display: inline-flex;
+  font-family: "Georgia";
+}
+
+.gallery1 img {
+  max-width: 100%;
+  max-height: 350px;
+  padding: 20px;
+  padding-bottom: 0px;
+  transition: all 0.3s ease 0s;
+}
+
+.gallery1 img:hover {
+  cursor: pointer;
+}
+
+.gallery2 {
+  display: inline-flex;
+  font-family: "Georgia";
+}
+
+.gallery2 img {
+  max-width: 100%;
+  max-height: 350px;
+  padding: 20px;
+  padding-bottom: 0px;
+  transition: all 0.3s ease 0s;
+}
+
+.gallery2 img:hover {
+  cursor: pointer;
+}
+
+.gallery3 {
+  display: inline-flex;
+  font-family: "Georgia";
+  padding-top: 120px;
+}
+
+.gallery3 img {
+  max-width: 100%;
+  max-height: 350px;
+  padding: 20px;
+  padding-bottom: 0px;
+  transition: all 0.3s ease 0s;
+}
+
+.gallery3 img:hover {
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+.main {
+  max-width: 1300px;
+}
+
+#section1 {
+  min-height: 50vh;
+  background-color: transparent;
+  text-align: center;
+  margin: 75px;;
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+
+#section1 figure {
+  width: 100%;
+  height: 250px;
+  line-height: 1.5em;
+}
+
+#section1 figcaption {
+  text-align: left;
+  margin: 20px;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 0.87em;
+  border: 1px solid;
+}
+
+.LA {
+  font-size: 20px;
+  font-family: "Georgia";
+  font-weight: normal;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.gallery1 {
+  display: inline-flex;
+  font-family: "Georgia";
+}
+
+.gallery1 img {
+  max-width: 100%;
+  max-height: 350px;
+  padding: 20px;
+  padding-bottom: 0px;
+  transition: all 0.3s ease 0s;
+}
+
+.gallery1 img:hover {
+  cursor: pointer;
+}
+
+.gallery2 {
+  display: inline-flex;
+  font-family: "Georgia";
+}
+
+.gallery2 img {
+  max-width: 100%;
+  max-height: 350px;
+  padding: 20px;
+  padding-bottom: 0px;
+  transition: all 0.3s ease 0s;
+}
+
+.gallery2 img:hover {
+  cursor: pointer;
+}
+
+.gallery3 {
+  display: inline-flex;
+  font-family: "Georgia";
+  padding-top: 120px;
+}
+
+.gallery3 img {
+  max-width: 100%;
+  max-height: 350px;
+  padding: 20px;
+  padding-bottom: 0px;
+  transition: all 0.3s ease 0s;
+}
+
+.gallery3 img:hover {
+  cursor: pointer;
+}
+/* --------------------------------------------------------- End Section 1 ----------------------------------------------------- */
+/* ----------------------------------------------------------- Section 2 ------------------------------------------------------- */
+
+#section2 {
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+  min-height: 50vh;
+  background-color: transparent;
+  text-align: center;
+}
+
+.figureBlog {
+  padding: 50px;
+}
+
+.figureBlog img {
+  max-height: 100%;
+  max-width: 500px;
+  padding: 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.figureBlog h3 {
+  font-family: "SackersGothicSTDLight", sans-serif;
+  font-size: 12px;
+  text-align: left;
+}
+
+.figureBlog a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #1b1b1b;
+}
+
+.figureBlog a:visited {
+  color: #1b1b1b;
+}
+
+.figureBlog a:hover {
+  text-decoration: underline;
+}
+
+.figureBlog img:hover {
+  opacity: 65%;
+  cursor: pointer;
+}
+
+.blogText {
+  display: flex;
+  padding: 20px;
+}
+
+.blogText p {
+  font-family: "Georgia";
+  font-size: 15px;
+  padding-top: 50px;
+  text-align: left;
+}
+
+.blogTitle h4 {
+  font-family: "Georgia";
+  font-size: 18px;
+  font-weight: lighter;
+  padding-top: 20px;
+  text-align: left;
+}
+
+.moreBlogs {
+  text-align: left;
+  font-family: "Georgia";
+  display: flex;
+  background-color: #cbcbcb;
+  font-size: 12px;
+  padding: 20px;
+}
+
+.moreBlogs small {
+  font-size: 15px;
+}
+
+.moreBlogs h4 {
+  font-weight: bold;  
+  font-size: 20px;
+}
+
+.blogContent {
+  border: 1px solid #cbcbcb;
+}
+
+.blogContent p {
+  padding: 1em;
+  line-height: 2em;
+}
+
+article {
+  margin: 1em;
+  padding: 1em;
+}
+/* ------------------------------------------------------- End Section 2 ------------------------------------------------------- */
+/* ----------------------------------------------------------- Section 3 ------------------------------------------------------- */
+#section3 {
+  min-height: 100vh;
+  margin: 75px;
+  text-align: center;
+}
+
+#section3 figcaption {
+  text-align: left;
+  margin: 20px;
+  padding: 5px;
+  font-size: 13px;
+  border: 1px solid #1b1b1b;
+}
+
+h5 {
+  font-family: "Georgia";
+  font-size: 20px;
+  font-weight: normal;
+  padding: 5px;
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.brand {
+  text-align: left;
+  font-family: "Segoe";
+  color:#1b1b1b;
+  margin-top: -20px;
+}
+
+.galleryWatches {
+  font-family: "Georgia";
+  display: flex;
+  transition: all 0.3s ease 0s;
+}
+
+.galleryWatches figcaption {
+  text-align: left;
+  margin: 20px;
+  padding: 5px;
+  font-size: 13px;
+  border: 1px solid #1b1b1b;
+  line-height: 1.5em;
+}
+
+.galleryWatches img {
+  max-width: 100%;
+  max-height: 350px;
+  padding: 20px;
+  padding-bottom: 0px;
+  object-fit:contain;
+  transition: all 0.3s ease 0s;
+}
+
+.galleryWatches img:hover {
+  cursor: pointer;
+}
+
+.videoContainer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.shoesVideo {
+  text-align: left;
+  padding: 20px;
+  padding-left: 75px;
+  display: flex;
+  background-color: #cbcbcb;
+}
+
+.shoesVideo img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border: 0.1px solid #1b1b1b;
+}
+
+.shoesVideo h6 {
+  font-family: "SackersGothicSTDLight", sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  padding: 5px;
+  padding-bottom: 0px;
+  text-align: center;
+  padding-left: 270px;
+  padding-top: 70px;
+  padding-right: 75px;
+}
+
+.shoesVideo a {
+  font-size: 14px;
+  text-decoration: none;
+  color:#1b1b1b;
+}
+
+.shoesVideo a:visited {
+  text-decoration: none;
+  color:#1b1b1b;
+}
+
+.shoesVideo button {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s ease 0s;
+  border: 0.1px solid #1b1b1b;
+  font-family: "SackersGothicSTDLight", sans-serif;
+}
+
+.shoesVideo button:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.shopNow {
+  font-size: 90px;
+  font-family: "rushink";
+  color: #ffffff;
+  display: flex;
+  padding-top: 20px;
+  margin: -20px;
+  margin-top: 0px;
+}
+
+.shopNow h6 {
+  padding-top: 320px;
+  transition: all 0.3s ease 0s;
+}
+
+.shopNow h6:hover {
+  opacity: 65%;
+}
+
+.shopNow a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.shopNow a:visited {
+  color: #ffffff;
+}
+
+.bannerA {
+  background-image: url('../src/assets/images/BottomBanners/lookbook.jpg');
+  background-position: center;
+  min-height: 700px;
+  min-width: 350px;
+}
+
+.bannerB {
+  background-image: url('./assets/images/LatestArrivals/balmain2.webp');
+  min-height: 700px;
+  min-width: 350px;
+}
+
+.bannerC {
+  background-image: url('./assets/images/BottomBanners/accessories.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 15% 74%;
+  min-width: 350px;
+  min-height: 700px;
+}
