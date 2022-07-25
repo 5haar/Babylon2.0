@@ -3,17 +3,17 @@ import React from 'react';
 class Nav extends React.Component {
     render () {
         return (
-          <>
+          <div className="nav_container">
           <h1>
             <a href="index.html">B A B Y L O N</a>
           </h1>
           <nav>
             <ul>
               <li>
-                <a href="index.html">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="clothing.html">Clothing</a>
+                <a href="">Clothing</a>
               </li>
               <li>
                 <a href="shoes.html">Shoes</a>
@@ -36,7 +36,7 @@ class Nav extends React.Component {
             </ul>
           </nav>
           <h2>ESSENTIAL MEN'S FASHION</h2>
-        </>
+        </div>
         );
     }
 }
