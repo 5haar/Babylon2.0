@@ -1,8 +1,13 @@
 import React from 'react';
+import Nav from './nav';
+import Footer from './footer';
+
 class Home extends React.Component {
     render () {
         return (
+          <section className="full_container">
           <section className="main">
+            <Nav />
             <section className="intro">
             <figure className="banner">
               <h3>Shop Spring Collection</h3>
@@ -411,7 +416,7 @@ class Home extends React.Component {
     </section>
     <section className="videoContainer">
       <section className="shoesVideo">
-        <img src="images/Slideshow/0.webp" id="image" alt="cool animation" />
+        <img src={(require('../assets/images/Slideshow/1.webp'))} id="image" alt="cool animation" />
         <h6>
           LUXURY FOOTWEAR: THE LATEST ARRIVALS
           <br />
@@ -438,10 +443,10 @@ class Home extends React.Component {
       </figure>
     </section>
   </section>
-
         </section>
+        <Footer />
+</section>
 
-          
         );
     }
 }

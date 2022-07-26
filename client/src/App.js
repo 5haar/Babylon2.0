@@ -1,16 +1,18 @@
 import './App.css';
 import React from 'react';
-import Nav from './components/nav';
-import Footer from './components/footer';
 import Home from './components/home';
+import Footer from './components/footer';
+import Nav from './components/nav';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
+    <div className="container">
       <Home />
-      <Footer />
     </div>
+
   );
 }
 

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 
 class Nav extends React.Component {
     render () {
@@ -10,10 +12,10 @@ class Nav extends React.Component {
           <nav>
             <ul>
               <li>
-                <a href="/">Home</a>
+              <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="">Clothing</a>
+              <Link to="/clothing">Clothing</Link>
               </li>
               <li>
                 <a href="shoes.html">Shoes</a>
@@ -41,4 +43,3 @@ class Nav extends React.Component {
     }
 }
 export default Nav;
-
