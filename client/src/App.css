@@ -811,3 +811,207 @@ h5 {
   min-width: 350px;
   min-height: 700px;
 }
+/* ---------------------------------------------------- Pages Under Construction -------------------------------------------------- */
+.vh_container {
+  height: 50vh;
+}
+.construction {
+  background-image: url(./assets/images/construction.jpg);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid #1b1b1b;
+  text-align: center;
+  max-width: 1300px;
+}
+
+.construction h3 {
+  font-size: 50px;
+  font-family: "SackersGothicSTDLight";
+}
+
+/* ---------------------------------------------------- End Pages Under Construction ----------------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+#clothingSection1 {
+  text-align: center;
+  max-width: 1300px;
+ }
+ 
+ #clothingSection1 video {
+   width: 100%;
+   cursor: pointer;
+   padding: 10px;
+ }
+ 
+ #clothingSection1 figcaption {
+   line-height: 1.5em;
+   text-align: left;
+   padding: 10px;
+   border: 1px solid #1b1b1b;
+   margin: 10px;
+   font-size: 0.87em;
+ }
+ 
+ .clothingGallery {
+   display: block;
+ }
+ 
+ .layer1 {
+   padding-top: 10px;
+   display: inline-flex;
+ }
+ 
+ .layer2 {
+   display: inline-flex;
+ }
+ 
+ .layer3 {
+   display: inline-flex;
+ }
+ 
+ .clothingCap {
+   font-family: "Segoe";
+   color: #1b1b1b;
+ }
+
+
+
+
+ /* ------------ Mobile Responsiveness ------------- */
+ @media all and (max-width: 850px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  nav ul {
+    display: none;
+  }
+
+  .banner h3 {
+    font-size: 3em;
+    padding: 0;
+  }
+
+  .gallery1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .scroll-down {
+    display: none;
+  }
+
+  #section1 {
+    padding-top: 165vh;
+  }
+  .LA {
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  .gallery2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gallery2 figure {
+    width: 100%;
+    min-height: 350px;
+    padding-bottom: 20px;
+    line-height: 1.5em;
+    text-align: center;  
+    margin-top: 10vh;
+  }
+
+  .gallery2 figcaption {
+    text-align: left;
+    margin: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 0.87em;
+    border: 1px solid;
+  }
+
+  .gallery3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gallery3 figure {
+    width: 100%;
+    min-height: 350px;
+    padding-bottom: 20px;
+    line-height: 1.5em;
+    text-align: center;  
+    margin-top: 10vh;
+  }
+
+  .gallery3 figcaption {
+    text-align: left;
+    margin: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 0.87em;
+    border: 1px solid;
+  }
+
+  #section2 figure {
+    display: none;
+  }
+
+  .blogText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .moreBlogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .galleryWatches {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .videoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shoesVideo {
+    display: none;
+  }
+  .shopNow {
+    display: none;
+  }
+
+  .firstLayer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .firstLayer article {
+    width: 80vw;
+    border: none;
+    margin: 5em;
+    padding:0;
+    padding-bottom: 5vh;
+  }
+
+ }
