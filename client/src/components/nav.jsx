@@ -1,37 +1,38 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 class Nav extends React.Component {
     render () {
         return (
           <div className="nav_container">
           <h1>
-            <a href="index.html">B A B Y L O N</a>
+            <a href="/">B A B Y L O N</a>
           </h1>
           <nav>
             <ul>
               <li>
-                <a href="/">Home</a>
+              <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="">Clothing</a>
+              <Link to="/clothing">Clothing</Link>
               </li>
               <li>
-                <a href="shoes.html">Shoes</a>
+              <Link to="/shoes">Shoes</Link>
               </li>
               <li>
-                <a href="watches.html">Watches</a>
+              <Link to="/watches">Watches</Link>
               </li>
               <li>
-                <a href="accessories.html">Accessories</a>
+              <Link to="/accessories">Accessories</Link>
               </li>
               <li>
-                <a href="theblog.html">The Blog</a>
+              <Link to="/blog">The Blog</Link>
               </li>
               <li>
-                <a href="aboutus.html">About Us</a>
+              <Link to="/about">About Us</Link>
               </li>
               <li>
-                <a href="contactus.html">Contact Us</a>
+              <Link to="/contact">Contact Us</Link>
               </li>
             </ul>
           </nav>
@@ -41,4 +42,3 @@ class Nav extends React.Component {
     }
 }
 export default Nav;
-
