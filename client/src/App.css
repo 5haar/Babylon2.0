@@ -423,7 +423,9 @@ footer {
 }
 
 .gallery2 {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Georgia";
 }
 
@@ -546,6 +548,22 @@ footer {
 
 .gallery3 img:hover {
   cursor: pointer;
+}
+
+.gallery2 figcaption {
+  text-align: left;
+  margin: 20px;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 0.87em;
+  border: 1px solid;
+}
+
+.shoes_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 /* --------------------------------------------------------- End Section 1 ----------------------------------------------------- */
 /* ----------------------------------------------------------- Section 2 ------------------------------------------------------- */
@@ -762,6 +780,10 @@ h5 {
   cursor: pointer;
 }
 
+.shoes_container {
+  max-width: 1300px;
+}
+
 .shopNow {
   font-size: 90px;
   font-family: "rushink";
@@ -849,6 +871,7 @@ h5 {
    border: 1px solid #1b1b1b;
    margin: 10px;
    font-size: 0.87em;
+   font-family: "Georgia";
  }
  
  .clothingGallery {
@@ -873,7 +896,73 @@ h5 {
    color: #1b1b1b;
  }
 
+/*----------------------------------------------------------- contact.html --------------------------------------------------------*/
+#contactSection {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 
+#contactSection h3 {
+  font-size: 45px;
+  font-family: "SEGOE";
+  font-weight: lighter;
+  padding: 50px;
+  text-decoration: underline 2px #1b1b1b;
+  text-underline-offset: 5px;
+  color: #1b1b1b;
+}
+
+
+.contact-box {
+  width: 500px;
+  background-color: #ffffff;
+  filter: drop-shadow(
+    1px 2px 4px black
+  );  text-align: center;
+  font-family: "Segoe" ;
+  border-radius: 4px;
+}
+
+.input-field {
+  width: 400px;
+  height: 40px;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #777;
+  outline: none;
+  font-size: 15px;
+  font-family: "Segoe" ;
+
+}
+
+.textarea-field {
+  height: 150px;
+  padding: 10px;
+  font-family: "Segoe" ;
+
+}
+
+.submitBtn {
+  margin: 20px;
+  font-family: "Segoe" ;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: all 0.3s ease 0s;
+  border: 0.3px solid;
+  color: #ffffff;
+  background-color: #1b1b1b;
+}
+
+.submitBtn:hover {
+  background-color: #cbcbcb;
+  cursor: pointer;
+}
+/*--------------------------------------------------------- End contact.html -------------------------------------------------------*/
 
 
  /* ------------ Mobile Responsiveness ------------- */
@@ -1014,4 +1103,88 @@ h5 {
     padding-bottom: 5vh;
   }
 
+  .layer1 {
+    flex-direction: column;
+  }
+
+  .layer2 {
+    flex-direction: column;
+  }
+
+  .layer3 {
+    flex-direction: column;
+  }
+  .shoes_container {
+    display: inline
+  }
+
+  .shoes_container img {
+    height: 100%;
+  }
+
+  .filter_container {
+    margin: 1em;
+    height: 30vh;
+    border: 0px;
+  }
+
+  .filter_box {
+    flex-direction: column;
+
+  }
  }
+
+
+
+
+
+ /* ------------Filter------------------------- */
+
+.filter_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter_box {
+  width: 100%;
+  border: 0.5px solid;
+  height: 3vh;
+  margin-left: 6em;
+  margin-right: 6em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1300px;
+}
+
+.btn_filter {
+  padding: 0.35em;
+  padding-right: 2em;
+  padding-left: 2em;
+  margin: 1em;
+  filter: drop-shadow(
+    0.25px 0.5px 1px black
+  );
+  background-color: #ffffff;
+  border: 0.3px solid;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.btn_filter:hover {
+  background-color: #cbcbcb;
+}
+
+label {
+font-family: "segoe";
+font-size: 0.85em;
+}
+
+input {
+  margin: 1em;
+}
+
+
+
