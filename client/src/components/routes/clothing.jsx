@@ -1,12 +1,14 @@
 import React from 'react';
 import Nav from '../nav';
 import Footer from '../footer';
+import Filter from '../filter';
 
 class Clothing extends React.Component {
     render () {
         return (
           <div className="container">
             <Nav />
+            <Filter />
             <section id="clothingSection1">
               <section className="clothingGallery">
                 <section className="layer1">
